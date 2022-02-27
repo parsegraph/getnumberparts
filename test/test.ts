@@ -12,13 +12,21 @@ describe("Package", function () {
 
   it("works with positive integers", () => {
     assert.deepEqual(getNumberParts(2), { sign: 0, exponent: 1, mantissa: 1 });
-    assert.deepEqual(getNumberParts(3), { sign: 0, exponent: 1, mantissa: 1.5 });
+    assert.deepEqual(getNumberParts(3), {
+      sign: 0,
+      exponent: 1,
+      mantissa: 1.5,
+    });
     assert.deepEqual(getNumberParts(4), { sign: 0, exponent: 2, mantissa: 1 });
   });
 
   it("works with negative integers", () => {
     assert.deepEqual(getNumberParts(-2), { sign: 1, exponent: 1, mantissa: 1 });
-    assert.deepEqual(getNumberParts(-3), { sign: 1, exponent: 1, mantissa: 1.5 });
+    assert.deepEqual(getNumberParts(-3), {
+      sign: 1,
+      exponent: 1,
+      mantissa: 1.5,
+    });
     assert.deepEqual(getNumberParts(-4), { sign: 1, exponent: 2, mantissa: 1 });
   });
 });

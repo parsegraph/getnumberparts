@@ -1,5 +1,5 @@
 import { assert } from "chai";
-import getNumberParts from "../dist/parsegraph-getnumberparts";
+import getNumberParts from "../src/index";
 
 describe("Package", function () {
   it("works with positive one", () => {
